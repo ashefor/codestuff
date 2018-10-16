@@ -1,0 +1,27 @@
+.text {
+    font-size: 30px;
+    color: blue;
+}
+.head {
+    font-size: 40px;
+    text-decoration: underline;
+}
+#text {
+    max-width: 400x;
+}
+form>p {
+    font-size: 20px;
+}
+.link {
+    text-decoration: none;
+    color: black;
+    padding: 20px 10px;
+}
+.fig1 {
+    display: inline-block; 
+    width: 40%;
+}
+.fig2 {
+    display: inline-block; 
+    width: 40%;
+}
