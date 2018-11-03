@@ -43,6 +43,9 @@ form>p {
 .top {
     padding: 20px 50px;
 }
+logo{
+    
+}
 .shredder {
     border: none;
     border-radius: 20px;
@@ -102,4 +105,15 @@ form>p {
 }
 .form {
     border-color: black;
+}
+body {
+    background-image: url(plain\ background.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
