@@ -6,10 +6,11 @@
     font-size: 40px;
     text-decoration: underline;
     font-family: 'Courier New', Courier, monospace;
+    
 }
 #text {
-    max-width: fit-content;
-    padding: 0px 50px;
+    
+    
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 25px;
     
@@ -43,7 +44,8 @@ form>p {
 .top {
     padding: 20px 50px;
 }
-logo{
+#logo{
+    float: left;
     
 }
 .shredder {
@@ -53,6 +55,10 @@ logo{
 }
 .bodydiv {
     padding: 20px 30px;
+    background: #FEAC5E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     
 }
 .shred {
@@ -76,7 +82,8 @@ logo{
 }
 .photogalleryy {
     margin: 0px 0px 0px 0px;
-    padding: 20px 30px;
+    padding: 50px 30px;
+    display: block;
     
 }
 .img2 {
@@ -94,7 +101,7 @@ logo{
     width: 24%;
     
 }
-.spacer {
+.visible-child {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -107,13 +114,17 @@ logo{
     border-color: black;
 }
 body {
-    background-image: url(plain\ background.jpg);
-    background-position: center;
-    background-repeat: repeat;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 10;
+    
+}
+.hidden-child {
+    display: none;
+}
+.parent:hover > .visible-child {
+    display: none;
+}
+.parent:hover > .hidden-child {
+    display: block;
+}
+.projecthead {
+    padding: 50px 50px;
 }
