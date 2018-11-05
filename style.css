@@ -87,15 +87,15 @@ background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+
 #hobbies {
     width: auto;
     height: 200px;
-    display: -webkit-flex; /* Safari */
-    -webkit-align-items: center; /* Safari 7.0+ */
+    display: -webkit-flex; 
+    -webkit-align-items: center; 
     display: flex;
     align-items: center;
 
     
 }
 .hobbies div {
-    -webkit-flex: 1; /* Safari 6.1+ */
+    -webkit-flex: 1; 
     flex: 1;
     margin-top: 20px;
     margin-bottom: 10px;
