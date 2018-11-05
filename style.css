@@ -1,7 +1,10 @@
 .text {
     font-size: 30px;
-    color: blue;
+    color: rgb(223, 79, 60);
+    
 }
+
+
 .head {
     font-size: 40px;
     text-decoration: underline;
@@ -54,7 +57,7 @@ form>p {
     margin: 0px 50px 0px 0px;
 }
 .bodydiv {
-    padding: 20px 30px;
+    
     background: #FEAC5E;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -76,16 +79,27 @@ background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+
     
 }
 .photogallery {
-    margin: 0px 0px 0px 0px;
-    padding: 20px 30px;
+    padding: 15px;
+    display: inline-block;
+    
     
 }
-.photogalleryy {
-    margin: 0px 0px 0px 0px;
-    padding: 50px 30px;
-    display: block;
+#hobbies {
+    width: auto;
+    height: 200px;
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+
     
 }
+.hobbies div {
+    -webkit-flex: 1; /* Safari 6.1+ */
+    flex: 1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+ }
 .img2 {
     display: inline-block; 
     padding: 10px;
@@ -94,37 +108,99 @@ background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+
     opacity: .35;
     
 }
-.container {
+.containner {
     position: relative;
     text-align: center;
     display: inline-block; 
-    width: 24%;
+    width: -webkit-fill-available;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    
     
 }
 .visible-child {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: relative;
     font-size: 50px;
-    transform: translate(-50%, -50%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
 .form {
     border-color: black;
 }
-body {
-    
-}
+
 .hidden-child {
     display: none;
+    
+    
+}
+img.hidden-child {
+    width: 200;
+    height: 200;
 }
 .parent:hover > .visible-child {
     display: none;
+    position: absolute;
 }
 .parent:hover > .hidden-child {
-    display: block;
+    display: inline-flex;
+    border-radius: 15px;
+
 }
 .projecthead {
     padding: 50px 50px;
+}
+body .bodyhobby #hobbies {
+    
+    height: 300;
+    margin: 0%;
+}
+body .body-one {
+    background: #667db6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+body {
+    padding: 0px;
+    margin: 0px;
+}
+head .ginger{
+    background: #667db6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.jumbotron h1{
+    font-size: 80px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.jumbotron p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+    font-size: 25px;
+    
+}
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.somework h1 {
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 500;
 }
